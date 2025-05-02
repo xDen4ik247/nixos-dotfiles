@@ -21,3 +21,20 @@ Gruvbox theme for NixOS with Hyprland.
 | [Dunst](https://github.com/dunst-project/dunst)🔔 | Notification Daemon             |
 | [Yazi](https://github.com/sxyazi/yazi)📂 | File Manager|
 | [Xanmod](https://xanmod.org/)⚡ | Linux Kernel              |
+
+# 🛠️ Installation
+```
+nix-shell -p git
+git clone https://github.com/gemakfy/NixOS-dotfiles\
+cd ~/NixOS-dotfiles/hardware
+rm hardware-configuration.nix
+cp /etc/nixos/hardware-configuration.nix .
+sudo nixos-rebuild switch --flake .
+home-manager switch --flake .
+reboot
+```
+
+> **⚠️ Warning**
+> This configuration is specifically designed for username `gemakfy`.
+> If your username is different, the config will not work without modifications.
+> replace all occurrences of `gemakfy` with your username.
