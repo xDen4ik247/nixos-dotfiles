@@ -12,6 +12,7 @@
     settings = {
       global = {
         ### Display ###
+        fullscreen = "show"; # show notification in fullscreen
         monitor = 0;
         follow = "mouse";
         width = 300;
