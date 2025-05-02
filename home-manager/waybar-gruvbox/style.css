@@ -1,0 +1,216 @@
+@define-color backgroundlight #000000;
+@define-color backgrounddark #000000;
+@define-color workspacesbackground1 #000000;
+@define-color workspacesbackground2 #222222;
+@define-color bordercolor #000000;
+@define-color textcolor1 #FFFFFF;
+@define-color textcolor2 #FFFFFF;
+@define-color textcolor3 #000000;
+@define-color iconcolor #000000;
+
+* {
+  font-size: 12px;
+  font-family: "SF Pro", "MesloLGS NF", monospace;
+  border: none;
+  border-radius: 0px;
+}
+
+window#waybar {
+  background: rgba(255, 255, 255, 0);
+  border-bottom: 0px solid #af3a03;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+/* -- Workspaces -- */
+#workspaces {
+  background: @workspacesbackground1;
+  margin: 5px 1px 6px 1px;
+  padding: 0px 1px;
+  border-radius: 15px;
+  border: 0px;
+  font-weight: bold;
+  font-style: normal;
+  opacity: 0.8;
+  font-size: 16px;
+  color: @textcolor1;
+}
+
+#workspaces button {
+  padding: 0px 5px;
+  margin: 4px 4px;
+  border-radius: 15px;
+  border: 0px;
+  color: @textcolor1;
+  background-color: @workspacesbackground2;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.4;
+}
+
+#workspaces button.active {
+  color: @textcolor1;
+  background: @workspacesbackground2;
+  border-radius: 15px;
+  min-width: 40px;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+
+#workspaces button:hover {
+  color: @textcolor1;
+  background: @workspacesbackground2;
+  border-radius: 15px;
+  opacity: 0.7;
+}
+
+/* -----------------------------------------------------
+ * Tooltips
+ * ----------------------------------------------------- */
+
+tooltip {
+  border-radius: 10px;
+  background-color: @backgroundlight;
+  opacity: 0.8;
+  padding: 20px;
+  margin: 0px;
+}
+
+tooltip label {
+  color: @textcolor2;
+}
+
+/* -----------------------------------------------------
+ * Window
+ * ----------------------------------------------------- */
+
+#window {
+  background: @backgroundlight;
+  margin: 8px 15px 8px 0px;
+  padding: 2px 14px 0px 14px;
+  border-radius: 12px;
+  color: @textcolor2;
+  font-size: 16px;
+  font-weight: normal;
+  opacity: 0.8;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+/* -----------------------------------------------------
+ * Taskbar
+ * ----------------------------------------------------- */
+
+#taskbar {
+  background: @backgroundlight;
+  margin: 6px 15px 6px 0px;
+  padding: 0px;
+  border-radius: 15px;
+  font-weight: normal;
+  font-style: normal;
+  opacity: 0.8;
+  border: 3px solid @backgroundlight;
+}
+
+#taskbar button {
+  margin: 0;
+  border-radius: 15px;
+  padding: 0px 5px 0px 5px;
+}
+
+/* -----------------------------------------------------
+ * Modules
+ * ----------------------------------------------------- */
+
+.modules-left > widget:first-child > #workspaces {
+  margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+  margin-right: 0;
+}
+
+/* -----------------------------------------------------
+ * Clock
+ * ----------------------------------------------------- */
+
+#clock {
+  background-color: @backgrounddark;
+  font-size: 16px;
+  color: @textcolor1;
+  border-radius: 15px;
+  padding: 1px 10px 0px 10px;
+  margin: 8px 15px 8px 0px;
+  opacity: 0.8;
+  border: 3px solid @bordercolor;
+}
+
+/* -----------------------------------------------------
+ * Pulseaudio
+ * ----------------------------------------------------- */
+
+#pulseaudio {
+  background-color: @backgroundlight;
+  font-size: 16px;
+  color: @textcolor2;
+  border-radius: 15px;
+  padding: 2px 15px 0px 15px;
+  margin: 8px 15px 8px 0px;
+  opacity: 0.8;
+}
+
+#pulseaudio.muted {
+  background-color: @backgrounddark;
+  color: @textcolor1;
+}
+
+/* -----------------------------------------------------
+ * Tray
+ * ----------------------------------------------------- */
+
+#tray {
+  padding: 0px 15px 0px 0px;
+  color: @textcolor3;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+}
+
+#custom-system {
+  margin-right: 15px;
+}
+
+/* -----------------------------------------------------
+ * Custom Modules
+ * ----------------------------------------------------- */
+
+#custom-appmenu {
+  background-color: @backgrounddark;
+  font-size: 16px;
+  color: @textcolor1;
+  border-radius: 15px;
+  padding: 0px 10px 0px 10px;
+  margin: 8px 14px 8px 14px;
+  opacity: 0.8;
+  border: 3px solid @bordercolor;
+}
+
+#custom-appmenuicon {
+  font-size: 26px;
+  color: @textcolor;
+  margin: 0px 15px 0px 10px;
+}
+
+#cava {
+  background-color: @backgroundlight;
+  border-radius: 15px;
+  padding: 2px 15px 0px 10px;
+  margin: 8px 15px 8px 0px;
+}
