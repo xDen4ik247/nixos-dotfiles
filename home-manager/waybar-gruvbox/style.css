@@ -207,10 +207,3 @@ window#waybar.empty #window {
   color: @textcolor;
   margin: 0px 15px 0px 10px;
 }
-
-#cava {
-  background-color: @backgroundlight;
-  border-radius: 15px;
-  padding: 2px 15px 0px 10px;
-  margin: 8px 15px 8px 0px;
-}

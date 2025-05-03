@@ -24,8 +24,6 @@
           "custom/empty"
         ];
 
-        modules-center = ["cava"];
-
         modules-right = [
           "pulseaudio"
           "keyboard-state"
@@ -39,7 +37,6 @@
           format = "{icon}";
           on-click = "activate";
 
-
           persistent-workspaces = {
           "1" = [ ];
           "2" = [ ];
@@ -48,7 +45,6 @@
           "5" = [ ];
           "6" = [ ];
           };
-
 
           format-icons = {
             "1" = "み";
@@ -101,15 +97,6 @@
             default = [" " " " " "];
           };
           on-click = "kitty alsamixer";
-        };
-
-        cava = {
-          format-icons = ["▁" "▂" "▃" "▄" "▅" "▆" "▇" "█"];
-          bar_delimiter = 0;
-          method = "pipewire";
-          noise_reduction = 0.77;
-          input_delay = 5;
-          bars = 24;
         };
       }
     ];
