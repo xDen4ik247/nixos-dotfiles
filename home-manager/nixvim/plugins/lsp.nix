@@ -14,7 +14,6 @@
       enable = true;
       highlightDefinitions = {
         enable = true;
-        # Set to false if you have an `updatetime` of ~100.
         clearOnCursorMove = false;
       };
     };
@@ -24,10 +23,17 @@
     lsp = {
       enable = true;
       servers = {
-        #pylsp.settings.plugins.flake8.enabled = true;
-        # pyright.filetypes = "python";
-        #pyright.enable = true;
+        pylsp = {
+          enable = true;
+          settings.plugins.flake8 = {
+            enabled = true;  # Enable Flake8
+            maxLineLength = 120;
+            showsource = true;
+          };
+        };
       };
     };
+    lsp-lines.enable = true;
+    lsp-format.enable = true;
   };
 }
