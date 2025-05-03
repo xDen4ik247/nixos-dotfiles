@@ -15,6 +15,8 @@
       trailspace = {};
       misc = {};
       surround = {};
-    };
+      icons = {};
+      };
+    mockDevIcons = true;
   };
 }

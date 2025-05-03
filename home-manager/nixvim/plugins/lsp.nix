@@ -2,11 +2,11 @@
   programs.nixvim.plugins = {
 
     treesitter = {
+      enable = true;
+      nixvimInjections = true;
       settings = {
-        enable = true;
-        nixvimInjections = true;
-        folding = true;
-        indent = true;
+        folding.enable = true;
+        indent.enable = true;
       };
     };
 
