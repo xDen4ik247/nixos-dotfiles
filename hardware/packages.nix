@@ -40,6 +40,7 @@
     zoxide # modern "cd"
     eza # modern "ls"
     zathura # vim-like pdf reader
+    playerctl
 
     #IP utils
     zapret

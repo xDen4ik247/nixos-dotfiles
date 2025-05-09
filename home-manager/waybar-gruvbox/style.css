@@ -207,3 +207,62 @@ window#waybar.empty #window {
   color: @textcolor;
   margin: 0px 15px 0px 10px;
 }
+/* -----------------------------------------------------
+ * Spotify Module
+ * ----------------------------------------------------- */
+
+#custom-spotify {
+  background-color: @backgrounddark;
+  color: @textcolor1; /* Зеленый цвет Spotify */
+  border-radius: 15px;
+  padding: 2px 15px 0px 10px;
+  margin: 8px 0px;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0.9;
+  border: 3px solid @bordercolor;
+}
+
+#custom-spotify.Playing {
+  background-color: #282828;
+  color: #1DB954;
+  animation: spotify-pulse 2s infinite;
+}
+
+#custom-spotify.Paused {
+  background-color: @backgrounddark;
+  color: #a0a0a0;
+}
+
+#custom-spotify.Stopped {
+  background-color: @backgrounddark;
+  color: @textcolor1;
+  opacity: 0.6;
+}
+
+@keyframes spotify-pulse {
+  0% { opacity: 0.9; }
+  50% { opacity: 0.7; }
+  100% { opacity: 0.9; }
+}
+
+#custom-spotify .icon {
+  margin-right: 8px;
+  color: #1DB954;
+  font-size: 18px;
+}
+
+#custom-spotify .text {
+  margin-left: 5px;
+  color: @textcolor1;
+}
+
+/* Адаптация для темного/светлого режима */
+#custom-spotify {
+  transition: all 0.3s ease;
+}
+
+#custom-spotify:hover {
+  opacity: 1;
+  background-color: #333333;
+}

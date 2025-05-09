@@ -4,6 +4,7 @@
     #Hyprland
     dunst
     pipewire
+    pulseaudio
     pamixer # pulseaudio cli mixer
     alsa-utils
     wireplumber

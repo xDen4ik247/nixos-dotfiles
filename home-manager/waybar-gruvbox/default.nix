@@ -24,6 +24,10 @@
           "custom/empty"
         ];
 
+        modules-center = [
+          "custom/spotify"
+        ];
+
         modules-right = [
           "pulseaudio"
           "keyboard-state"
@@ -73,6 +77,20 @@
           format = "";
           on-click = "shutdown now";
           tooltip = false;
+        };
+
+        "custom/spotify" = {
+          format = "{icon} {}";
+          exec = "playerctl --player=spotify metadata --format '{{artist}} - {{title}}'";
+          return-type = "text";
+          exec-if = "playerctl --list-all | grep -q spotify";
+          on-click = "playerctl --player=spotify play-pause";
+          on-click-right = "playerctl --player=spotify next";
+          escape = true;
+          max-length = 30;
+          format-icons = [""];
+          interval = 1;
+          tooltip = true;
         };
 
         tray = {
