@@ -11,6 +11,10 @@
     hyprpolkitagent
     waybar
     swww
+    rofi-wayland # launcher
+    rofi-emoji
+    cliphist # clipboard
+    wl-clipboard
 
     kitty
     grim

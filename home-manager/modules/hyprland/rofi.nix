@@ -3,11 +3,8 @@ let
   inherit (config.lib.formats.rasi) mkLiteral;
 in
   {
-  home.packages = with pkgs; [ cliphist wl-clipboard ]; #clipboard managerd
-  programs.rofi = {
+    programs.rofi = {
     enable = true;
-    plugins = [pkgs.rofi-emoji];
-    package = pkgs.rofi-wayland;
     font = "Noto Sans Medium 11";
 
     theme = {
