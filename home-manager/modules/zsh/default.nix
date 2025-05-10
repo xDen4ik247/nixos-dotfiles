@@ -8,7 +8,7 @@
     history.size = 1000000;
     syntaxHighlighting.enable = true;
 
-    initExtra = ''
+    initContent = ''
       [[ ! -f ${./p10k.zsh} ]] || source ${./p10k.zsh}
       eval "$(zoxide init --cmd cd zsh)"
       export PATH="$HOME/.cargo/bin:$PATH"
