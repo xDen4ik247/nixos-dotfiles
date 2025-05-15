@@ -1,10 +1,8 @@
-{ inputs, pkgs, nur, ... }:
+{ inputs, pkgs, ... }:
 {
   programs.librewolf = {
     enable = true;
-    languagePacks = [
-      "ru"
-    ];
+    languagePacks = [ "ru" ];
     profiles = {
       "gemakfy" = {
         id = 0;
@@ -15,12 +13,14 @@
           "browser.search.isUS" = true;
           "DisplayBookmarksToolbar" = "never";
           "distribution.searchplugins.defaultLocale" = "en-US";
+          "browser.search.region" = "US";
           "general.useragent.locale" = "en-US";
           "browser.bookmarks.showMobileBookmarks" = false;
         };
 
         search = {
           default = "google";
+          order = [ "Google" "Nix Packages" "Nix Options" "Home-manager Options" ];
           engines = {
             "Nix Packages" = {
               urls = [{

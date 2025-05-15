@@ -6,10 +6,8 @@
     anydesk
     librewolf
     #Minecraft
-    mangohud
-    gamemode
+    # gamemode
     prismlauncher
-    mangohud
     ayugram-desktop
     vesktop
     spotify
@@ -55,9 +53,6 @@
     dig
 
     amnezia-vpn
-    linuxKernel.packages.linux_xanmod_latest.amneziawg
-    amneziawg-go
-    amneziawg-tools
 
     home-manager
 
@@ -75,15 +70,6 @@
     libsForQt5.qt5.qtsvg
     libsForQt5.qt5.qtquickcontrols2
     libsForQt5.qt5.qtgraphicaleffects
-
-    # Nvidia libs
-    vaapiVdpau
-    libvdpau
-    libvdpau-va-gl
-    nvidia-vaapi-driver
-    vdpauinfo
-    libva
-    libva-utils
   ];
 
   fonts.packages = with pkgs; [

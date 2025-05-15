@@ -4,6 +4,7 @@
 
     modules = {
       align = {};
+      pairs.enable = true;
       basics = {
         options.extra_ui = true;
       };

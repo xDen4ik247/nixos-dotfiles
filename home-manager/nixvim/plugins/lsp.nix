@@ -25,10 +25,12 @@
       servers = {
         pylsp = {
           enable = true;
-          settings.plugins.flake8 = {
-            enabled = true;  # Enable Flake8
-            maxLineLength = 120;
-            showsource = true;
+          settings.plugins = {
+            flake8 = {
+              enabled = true;  # Enable Flake8
+              maxLineLength = 120;
+              showsource = true;
+            };
           };
         };
       };
