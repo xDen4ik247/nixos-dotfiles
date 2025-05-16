@@ -5,6 +5,7 @@ in
   {
     programs.rofi = {
     enable = true;
+    plugins = [pkgs.rofi-emoji];
     font = "Noto Sans Medium 11";
 
     theme = {
