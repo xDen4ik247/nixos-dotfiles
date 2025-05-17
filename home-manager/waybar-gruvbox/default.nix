@@ -81,13 +81,12 @@
 
         "custom/spotify" = {
           format = "{icon} {}";
-          exec = "playerctl --player=spotify metadata --format '{{artist}} - {{title}}'";
+          exec = "playerctl metadata --format '{{title}} - {{artist}}'";
           return-type = "text";
-          exec-if = "playerctl --list-all | grep -q spotify";
-          on-click = "playerctl --player=spotify play-pause";
-          on-click-right = "playerctl --player=spotify next";
+          on-click = "playerctl play-pause";
+          on-click-right = "playerctl next";
           escape = true;
-          max-length = 30;
+          max-length = 40;
           format-icons = [""];
           interval = 1;
           tooltip = true;
