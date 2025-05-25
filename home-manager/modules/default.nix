@@ -11,6 +11,7 @@
     ./zsh
     ./kitty.nix
     ./stylix.nix
+    ./proton.nix
 
     ../waybar-gruvbox
   ];

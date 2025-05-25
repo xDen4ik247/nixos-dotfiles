@@ -42,6 +42,8 @@
         p = "python";
         generations = "sudo nix-env -p /nix/var/nix/profiles/system --list-generations";
         v = "nvim";
+        f = "nvim $(fzf)";
+        play = "firejail --seccomp --caps.drop=all --nice=1 --nodbus --private=~/Zomboid --profile=steam steam";
       };
   };
 }

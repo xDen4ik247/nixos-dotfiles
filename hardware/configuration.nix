@@ -44,6 +44,8 @@
     hyprland.enable = true; # enable hyprland
     zsh.enable = true;
     gamemode.enable = true;
+    steam.enable = true;
+    steam.gamescopeSession.enable = true;
   };
 
   system.stateVersion = "24.11"; # Did you read the comment?

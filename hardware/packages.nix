@@ -37,8 +37,12 @@
     yazi
     zoxide # modern "cd"
     eza # modern "ls"
+    fzf
     zathura # vim-like pdf reader
     playerctl
+    firejail # namespace-based sandboxing
+    wine
+    protonup
 
     #IP utils
     zapret

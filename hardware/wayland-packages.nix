@@ -11,6 +11,7 @@
     hyprpolkitagent
     waybar
     swww
+    mpvpaper
     rofi-wayland # launcher
     rofi-emoji
     cliphist # clipboard

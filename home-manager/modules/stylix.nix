@@ -11,6 +11,7 @@
       cava.enable = true;
       cava.rainbow.enable = true;
       vesktop.enable = true;
+      fzf.enable = true;
       librewolf.profileNames = [ "gemakfy" ];
 
       dunst.enable = false;
