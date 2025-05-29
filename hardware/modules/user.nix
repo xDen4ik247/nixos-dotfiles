@@ -5,7 +5,7 @@
   users.users.gemakfy = {
     isNormalUser = true;
     description = "gemakfy";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "gamemode" ];
     packages = with pkgs; [];
     shell = pkgs.zsh;
   };

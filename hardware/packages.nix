@@ -41,8 +41,9 @@
     zathura # vim-like pdf reader
     playerctl
     firejail # namespace-based sandboxing
-    wine
-    protonup
+    protonup # for steam
+    flatpak
+    docker
 
     #IP utils
     zapret

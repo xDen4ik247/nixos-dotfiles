@@ -15,6 +15,7 @@
       ./modules/sddm/sddm.nix
       ./modules/bootloader.nix
       ./modules/zram.nix
+      ./modules/gamemode.nix
 
       #./modules/zapret.nix
       ./modules/dns-crypt.nix
@@ -24,6 +25,9 @@
     kernelPackages = pkgs.linuxPackages_xanmod_latest;
     consoleLogLevel = 0;
   };
+
+  services.flatpak.enable = true;
+  virtualisation.docker.enable = true;
 
   environment.sessionVariables = {
     MOZ_ENABLE_WAYLAND = "1";
@@ -43,9 +47,9 @@
     hyprland.xwayland.enable = true;
     hyprland.enable = true; # enable hyprland
     zsh.enable = true;
-    gamemode.enable = true;
     steam.enable = true;
     steam.gamescopeSession.enable = true;
+    firejail.enable = true;
   };
 
   system.stateVersion = "24.11"; # Did you read the comment?
