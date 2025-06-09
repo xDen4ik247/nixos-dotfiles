@@ -18,7 +18,7 @@
       ./modules/gamemode.nix
 
       #./modules/zapret.nix
-      ./modules/dns-crypt.nix
+      #./modules/dns-crypt.nix
     ];
 
   boot = {

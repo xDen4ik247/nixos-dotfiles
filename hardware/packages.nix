@@ -34,10 +34,10 @@
     zip
     unrar
     git
-    yazi
+    yazi # TUI
     zoxide # modern "cd"
     eza # modern "ls"
-    fzf
+    fzf # file search
     zathura # vim-like pdf reader
     playerctl
     firejail # namespace-based sandboxing

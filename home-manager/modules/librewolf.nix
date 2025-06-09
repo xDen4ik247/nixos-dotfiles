@@ -16,6 +16,7 @@
           "browser.search.region" = "US";
           "general.useragent.locale" = "en-US";
           "browser.bookmarks.showMobileBookmarks" = false;
+          "browser.download.useDownloadDir" = false;
         };
 
         search = {
