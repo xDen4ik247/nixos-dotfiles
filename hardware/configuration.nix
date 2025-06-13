@@ -17,8 +17,7 @@
       ./modules/zram.nix
       ./modules/gamemode.nix
 
-      #./modules/zapret.nix
-      #./modules/dns-crypt.nix
+      ./modules/dns-crypt.nix
     ];
 
   boot = {
@@ -28,6 +27,13 @@
 
   services.flatpak.enable = true;
   virtualisation.docker.enable = true;
+
+  services.ollama = {
+    enable = true;
+    # Optional: preload models, see https://ollama.com/library
+    loadModels = [ "deepseek-r1:1.5b"];
+  };
+
 
   environment.sessionVariables = {
     MOZ_ENABLE_WAYLAND = "1";

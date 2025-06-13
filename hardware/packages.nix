@@ -46,7 +46,6 @@
     docker
 
     #IP utils
-    zapret
     dnscrypt-proxy2
     nftables
     ipset
@@ -56,8 +55,6 @@
     dig
     traceroute
     dig
-
-    amnezia-vpn
 
     home-manager
 

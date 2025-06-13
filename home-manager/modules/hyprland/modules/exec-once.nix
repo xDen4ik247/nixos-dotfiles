@@ -1,7 +1,6 @@
 {
   wayland.windowManager.hyprland.settings.exec-once = [
     "mpvpaper DP-1 -o 'hwdec=nvdec --loop --profile=low-latency --scale=bilinear' --auto-pause ~/nix/home-manager/wallpapers/violet-evergarden-crying-moewalls-com.mp4"
-    "AmneziaVPN"
     #"waypaper --restore"
     "waybar"
     "wl-paste --type text --watch cliphist store"
