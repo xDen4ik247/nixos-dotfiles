@@ -44,6 +44,7 @@
     protonup # for steam
     flatpak
     docker
+    cmatrix
 
     #IP utils
     dnscrypt-proxy2

@@ -31,8 +31,8 @@
           src = pkgs.fetchFromGitHub {
             owner = "gemakfy";
             repo = "MilkGrub";
-            rev = "58df606df41f422fed87c9e7b621f2a5e2cd94f9";
-            hash = "sha256-9t0H72qE5q5Jl41c7TCEA8VIgyrxrE/q9fTPXvOOWVU=";
+            rev = "9bb508ae1486b46466aaa4a72df8fbd9f240db66";
+            hash = "sha256-zX0xl3CNVWRQB0CZi/PtIm68mDe/z0nGj2x68B1Z7/A=";
           };
           installPhase = "cp -r . $out";
         };
