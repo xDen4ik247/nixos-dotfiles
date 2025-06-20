@@ -22,7 +22,7 @@ Gruvbox theme for NixOS with Hyprland.
 # 🛠️ Installation
 ```
 nix-shell -p git
-git clone https://github.com/gemakfy/NixOS-dotfiles\
+git clone https://github.com/gemakfy/NixOS-dotfiles
 cd ./NixOS-dotfiles/hardware
 rm hardware-configuration.nix
 cp /etc/nixos/hardware-configuration.nix .
@@ -35,3 +35,7 @@ reboot
 > This configuration is specifically designed for username `gemakfy`.
 > If your username is different, the config will not work without modifications.
 > replace all occurrences of `gemakfy` with your username.
+
+## 🥀references
+config base: https://github.com/Andrey0189/nixos-config
+waybar: https://github.com/V3ntus/nixos
