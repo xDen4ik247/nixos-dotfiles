@@ -5,8 +5,6 @@
     #Desktop apps
     anydesk
     librewolf
-    #Minecraft
-    # gamemode
     prismlauncher
     ayugram-desktop
     vesktop
@@ -14,16 +12,14 @@
     obs-studio
     chromium
     vlc
-    qemu # virtualization
-    quickemu
     recaf-launcher
-    zulu23 # java
-    #python
+
+    # Python
     python313
     python313Packages.flake8
     zed-editor
 
-    # cli utils
+    # CLI utils
     vim
     #neovim
     zsh
@@ -45,44 +41,19 @@
     flatpak
     docker
     cmatrix
+    cava
+    qemu # virtualization
+    quickemu
 
-    #IP utils
+    # IP utils
     dnscrypt-proxy2
     nftables
     ipset
-    #Test domain
+    # Test domain
     whois
     mtr
     dig
     traceroute
     dig
-
-    home-manager
-
-    # lib
-    xwayland
-    egl-wayland
-    xdg-desktop-portal-hyprland
-    bibata-cursors
-    catppuccin
-    dracula-theme
-    gtk4
-
-    # for sddm
-    sddm-astronaut
-    libsForQt5.qt5.qtsvg
-    libsForQt5.qt5.qtquickcontrols2
-    libsForQt5.qt5.qtgraphicaleffects
-  ];
-
-  fonts.packages = with pkgs; [
-    jetbrains-mono
-    noto-fonts
-    noto-fonts-emoji
-    twemoji-color-font
-    font-awesome
-    powerline-fonts
-    powerline-symbols
-    nerd-fonts.hack
   ];
 }
