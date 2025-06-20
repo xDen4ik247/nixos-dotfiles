@@ -213,7 +213,7 @@ window#waybar.empty #window {
 
 #custom-spotify {
   background-color: @backgrounddark;
-  color: @textcolor1; /* Зеленый цвет Spotify */
+  color: @textcolor1;
   border-radius: 15px;
   padding: 2px 15px 0px 10px;
   margin: 8px 0px;
@@ -257,7 +257,6 @@ window#waybar.empty #window {
   color: @textcolor1;
 }
 
-/* Адаптация для темного/светлого режима */
 #custom-spotify {
   transition: all 0.3s ease;
 }

@@ -1,8 +1,5 @@
 # ❄  NixOS Gruvbox Rice
 
-![NixOS](https://img.shields.io/badge/NixOS-unstable-red.svg?style=flat-square&logo=NixOS&logoColor=white)
-
-
 Gruvbox theme for NixOS with Hyprland.
 
 ## 🖼️ Screenshots
