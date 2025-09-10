@@ -16,6 +16,7 @@
       ./modules/bootloader.nix
       ./modules/zram.nix
       ./modules/gamemode.nix
+      ./modules/wifi.nix
 
       ./modules/dns-crypt.nix
     ];
