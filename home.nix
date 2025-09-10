@@ -1,7 +1,7 @@
 { config, pkgs, ... }: {
 	home = {
-		username = "gemakfy";
-		homeDirectory = "/home/gemakfy";
+		username = "ziggyss";
+		homeDirectory = "/home/ziggyss";
 		stateVersion = "25.05";
   };
 
