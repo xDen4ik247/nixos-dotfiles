@@ -13,7 +13,7 @@
       vesktop.enable = true;
       fzf.enable = true;
       librewolf.enable = true;
-      librewolf.profileNames = [ "gemakfy" ];
+      librewolf.profileNames = [ "ziggyss" ];
       spicetify.enable = true;
 
       dunst.enable = false;
