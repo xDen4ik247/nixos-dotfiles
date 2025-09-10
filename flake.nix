@@ -34,7 +34,7 @@
       ];
     };
 
-    homeConfigurations.gemakfy = home-manager.lib.homeManagerConfiguration {
+    homeConfigurations.ziggyss = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages."x86_64-linux";
       modules = [
         spicetify-nix.homeManagerModules.spicetify
