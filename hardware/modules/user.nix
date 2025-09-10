@@ -2,9 +2,9 @@
 
   #users.defaultUserShell = pkgs.zsh;
 
-  users.users.gemakfy = {
+  users.users.ziggyss = {
     isNormalUser = true;
-    description = "gemakfy";
+    description = "ZiggySS";
     extraGroups = [ "networkmanager" "wheel" "gamemode" ];
     packages = with pkgs; [];
     shell = pkgs.zsh;
