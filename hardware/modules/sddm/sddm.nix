@@ -4,7 +4,7 @@
     displayManager = {
       defaultSession = "hyprland";
       autoLogin.enable = true;
-      autoLogin.user = "gemakfy";
+      autoLogin.user = "ziggyss";
       sddm = {
         enable = true;
         wayland.enable = true;
