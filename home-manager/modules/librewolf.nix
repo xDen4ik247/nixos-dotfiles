@@ -4,7 +4,7 @@
     enable = true;
     languagePacks = [ "ru" ];
     profiles = {
-      "gemakfy" = {
+      "ziggyss" = {
         id = 0;
         isDefault = true;
 
