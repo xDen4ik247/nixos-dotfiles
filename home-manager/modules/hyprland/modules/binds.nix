@@ -12,12 +12,12 @@
       # Window/Session actions.
       "$mainMod, T, exec, $terminal"
       "$mainMod, Q, killactive,"
-      "$mainMod, M, exit"
+      "$mainMod, L, exit"
       "$mainMod, E, exec, $fileManager"
-      "$mainMod, V, togglefloating,"
+      "$mainMod, U, togglefloating,"
       "$mainMod, S, exec, $menu"
-      "$mainMod SHIFT, R, exec, rofi -modi emoji -show emoji"
-      "$mainMod, Tab, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy" 
+      "$mainMod SHIFT, S exec, rofi -modi emoji -show emoji"
+      "$mainMod, V, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy" 
       "$mainMod SHIFT, B, exec, pkill waybar && waybar"
       "$mainMod, P, pseudo," # dwindle
       "$mainMod, A, togglesplit," # dwindle
