@@ -2,7 +2,7 @@
 
 {
   boot.kernelModules = [ "rtl8852bu" ];
-  boot.extraModulePackages = [ rtl8852bu ];
+  boot.extraModulePackages = [ config.boot.kernelPackages.rtl8852bu ];
 
   environment.systemPackages = [ pkgs.usb-modeswitch ];
 
