@@ -14,7 +14,6 @@
       fzf.enable = true;
       librewolf.enable = true;
       librewolf.profileNames = [ "ziggyss" ];
-      spicetify.enable = true;
 
       dunst.enable = false;
       waybar.enable = false;
