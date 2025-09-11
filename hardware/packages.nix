@@ -29,6 +29,7 @@
     zip
     unrar
     git
+    inxi
     yazi # TUI
     zoxide # modern "cd"
     eza # modern "ls"
