@@ -2,8 +2,7 @@
 
 {
   boot = {
-    kernelModules = [ "8852bu" ];
-    extraModulePackages = [ config.boot.kernelPackages.rtl8852bu ];
+    kernelModules = [ "rtl8852bu" ];
   };
 
   services.udev.extraRules = ''

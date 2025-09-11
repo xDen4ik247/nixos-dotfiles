@@ -10,20 +10,19 @@
 
     bind = [
       # Window/Session actions.
-      "$mainMod, Q, exec, $terminal"
-      "$mainMod, C, killactive,"
+      "$mainMod, T, exec, $terminal"
+      "$mainMod, Q, killactive,"
       "$mainMod, M, exit"
       "$mainMod, E, exec, $fileManager"
       "$mainMod, V, togglefloating,"
-      "$mainMod, R, exec, $menu"
+      "$mainMod, S, exec, $menu"
       "$mainMod SHIFT, R, exec, rofi -modi emoji -show emoji"
       "$mainMod, Tab, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy" 
       "$mainMod SHIFT, B, exec, pkill waybar && waybar"
       "$mainMod, P, pseudo," # dwindle
       "$mainMod, A, togglesplit," # dwindle
-      "$mainMod, X, exec, librewolf"
-      "$mainMod, B, exec, spotify --enable-features=UseOzonePlatform --ozone-platform=wayland"
-      "$mainMod, T, exec, vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland"# Dwindle
+      "$mainMod SHIFT, F, exec, firefox"
+      "$mainMod, B, exec, yandex-music"
       "$mainMod, D, exec, AyuGram"
       "$mainMod, O, togglesplit,"
       "$mainMod, P, pseudo,"
@@ -62,8 +61,8 @@
 
 
       # Example special workspace (scratchpad)
-      "$mainMod, S, togglespecialworkspace, magic"
-      "$mainMod SHIFT, S, movetoworkspace, special:magic"
+      "$mainMod, W, togglespecialworkspace, magic"
+      "$mainMod SHIFT, W, movetoworkspace, special:magic"
 
       # Scroll through existing workspaces with mainMod + scroll
       "$mainMod, mouse_down, workspace, e+1"

@@ -2,13 +2,12 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
-    #Desktop apps
-    librewolf
+    #Desktop apps 
     firefox
     prismlauncher
     ayugram-desktop
-    vesktop
-    spotify
+    # yandex-music
+    bitwarden-desktop
     obs-studio
     chromium
     vlc
