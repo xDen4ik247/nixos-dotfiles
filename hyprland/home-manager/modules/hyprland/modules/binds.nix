@@ -16,7 +16,7 @@
       "$mainMod, E, exec, $fileManager"
       "$mainMod, U, togglefloating,"
       "$mainMod, S, exec, $menu"
-      "$mainMod SHIFT, S exec, rofi -modi emoji -show emoji"
+      "$mainMod SHIFT, S, exec, rofi -modi emoji -show emoji"
       "$mainMod, V, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy" 
       "$mainMod SHIFT, B, exec, pkill waybar && waybar"
       "$mainMod, P, pseudo," # dwindle
